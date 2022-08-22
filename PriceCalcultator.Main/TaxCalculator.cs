@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace PriceCalcultator.Tests
 {
@@ -16,7 +17,12 @@ namespace PriceCalcultator.Tests
 
         public static string GetFormatedReturn(Product book, TaxRate taxValue)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+            double priceWithAppliedTax = ApplyTax(book.price, taxValue);
+            sb.AppendLine(String.Format("Book with name = \"{0}\", UPC = {1}, price =${2}.", book.name, book.upc, book.price));
+            sb.Append(string.Format("Product price reported as ${0} before tax and ${1} after {2} % tax.", book.price, string.Format("{0:f2}", priceWithAppliedTax), taxValue.rate));
+
+            return sb.ToString();
         }
     }
 }

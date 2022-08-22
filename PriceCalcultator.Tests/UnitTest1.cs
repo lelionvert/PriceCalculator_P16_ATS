@@ -12,7 +12,7 @@ namespace PriceCalcultator.Tests
         {
             Product book = new Product()
             {
-                name = "Le Petit Prince",
+                name = "The Little Prince",
                 upc = 12345,
                 price = 20.25
             };
@@ -23,9 +23,8 @@ namespace PriceCalcultator.Tests
             };
 
             String appliedTax = TaxCalculator.GetFormatedReturn(book, taxRate);
-            Assert.AreEqual("Book with name = “The Little Prince”, UPC = 12345, price =$20.25.\n" +
-                            "Product price reported as $20.25 before tax and $24.30 after 20 % tax."
-                            , appliedTax);
+            Console.WriteLine(appliedTax);
+            Assert.AreEqual("Book with name = \"The Little Prince\", UPC = 12345, price =$20.25.\r\nProduct price reported as $20.25 before tax and $24.30 after 20 % tax.", appliedTax);
         }
 
         [TestMethod]
