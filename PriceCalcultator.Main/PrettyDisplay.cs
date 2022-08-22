@@ -7,13 +7,11 @@ namespace PriceCalcultator.Main
     {
         public string GetFormatedReturn(Product product, TaxRate taxValue)
         {
-            StringBuilder sb = new StringBuilder();
-            
-            sb.Append(product.ToString());
-            sb.Append(System.Environment.NewLine);
-            sb.Append(product.ToStringWithTaxe(taxValue));
-
-            return sb.ToString();
+           return new StringBuilder()
+                .Append(product.ToString())
+                .Append(System.Environment.NewLine)
+                .Append(product.ToStringWithTaxe(taxValue))
+                .ToString();
         }
     }
 }
