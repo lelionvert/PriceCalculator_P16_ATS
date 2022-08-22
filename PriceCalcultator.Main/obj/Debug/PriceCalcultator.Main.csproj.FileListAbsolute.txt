@@ -1,8 +1,0 @@
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\bin\Debug\PriceCalcultator.Main.exe.config
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\bin\Debug\PriceCalcultator.Main.exe
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\bin\Debug\PriceCalcultator.Main.pdb
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\obj\Debug\PriceCalcultator.Main.csproj.AssemblyReference.cache
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\obj\Debug\PriceCalcultator.Main.csproj.SuggestedBindingRedirects.cache
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\obj\Debug\PriceCalcultator.Main.csproj.CoreCompileInputs.cache
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\obj\Debug\PriceCalcultator.Main.exe
-C:\Users\Teissa Santos\Desktop\Projects\CSharp\PriceCalcultator\PriceCalcultator.Main\obj\Debug\PriceCalcultator.Main.pdb
