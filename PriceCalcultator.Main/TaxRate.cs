@@ -1,4 +1,4 @@
-﻿namespace PriceCalcultator.Tests
+﻿namespace PriceCalcultator.Main
 {
     public class TaxRate
     {

@@ -1,12 +1,10 @@
-﻿using PriceCalcultator.Tests;
-using System;
+﻿using System;
 using System.Text;
 
-namespace PriceCalcultator.Tests
+namespace PriceCalcultator.Main
 {
     public class PrettyDisplay
     {
-
         public string GetFormatedReturn(Product book, TaxRate taxValue)
         {
             StringBuilder sb = new StringBuilder();

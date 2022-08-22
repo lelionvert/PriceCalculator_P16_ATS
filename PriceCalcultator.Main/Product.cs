@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PriceCalcultator.Tests
+namespace PriceCalcultator.Main
 {
     public class Product
     {
