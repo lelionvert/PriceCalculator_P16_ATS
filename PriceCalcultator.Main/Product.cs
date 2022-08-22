@@ -4,11 +4,18 @@ namespace PriceCalcultator.Main
 {
     public class Product
     {
-        public string name;
+        private string name;
 
-        public int upc;
+        private int upc;
 
-        public double price;
+        private double price;
+
+        public Product(string name, int upc, double price)
+        {
+            this.name = name;
+            this.upc = upc;
+            this.price = price;
+        }
 
         public double ApplyTax(TaxRate taxRate)
         {

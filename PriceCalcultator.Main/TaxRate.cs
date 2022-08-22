@@ -2,8 +2,13 @@
 {
     public class TaxRate
     {
-        public double rate;
-        
+        private double rate;
+
+        public TaxRate(double rate)
+        {
+            this.rate = rate;
+        }
+
         public double ConvertTaxRateToPercentage()
         {
             return (1 + (this.rate / 100));
