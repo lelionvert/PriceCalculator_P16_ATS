@@ -1,6 +1,6 @@
 ﻿namespace PriceCalcultator.Tests
 {
-    public  class Product
+    public class Product
     {
         public string name;
 

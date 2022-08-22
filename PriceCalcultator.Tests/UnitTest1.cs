@@ -8,7 +8,7 @@ namespace PriceCalcultator.Tests
     public class TaxCalculatorTests
     {
         [TestMethod]
-        public void ToRename()
+        public void Apply20TaxToBookPriced20dot25ShouldReturn24dot30()
         {
             Product book = new Product()
             {
@@ -22,9 +22,8 @@ namespace PriceCalcultator.Tests
                 rate = 20
             };
 
-            String appliedTax = TaxCalculator.GetFormatedReturn(book, taxRate);
-            Console.WriteLine(appliedTax);
-            Assert.AreEqual("Book with name = \"The Little Prince\", UPC = 12345, price =$20.25.\r\nProduct price reported as $20.25 before tax and $24.30 after 20 % tax.", appliedTax);
+            String formattedReturn = TaxCalculator.GetFormatedReturn(book, taxRate);
+            Assert.AreEqual("Book with name = \"The Little Prince\", UPC = 12345, price =$20.25.\r\nProduct price reported as $20.25 before tax and $24.30 after 20 % tax.", formattedReturn);
         }
 
         [TestMethod]
