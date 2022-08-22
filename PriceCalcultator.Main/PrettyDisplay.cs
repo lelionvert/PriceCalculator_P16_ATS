@@ -5,14 +5,14 @@ namespace PriceCalcultator.Main
 {
     public class PrettyDisplay
     {
-        public string GetFormatedReturn(Product book, TaxRate taxValue)
+        public string GetFormatedReturn(Product product, TaxRate taxValue)
         {
             StringBuilder sb = new StringBuilder();
-            double priceWithAppliedTax = book.ApplyTax(taxValue);
-            string priceWithAppliedTaxAsString = book.ConvertPriceToString(priceWithAppliedTax);
+            double priceWithAppliedTax = product.ApplyTax(taxValue);
+            string priceWithAppliedTaxAsString = product.ConvertPriceToString(priceWithAppliedTax);
 
-            sb.AppendLine(book.ToString());
-            sb.Append(string.Format("Product price reported as ${0} before tax and ${1} after {2} % tax.", book.price, priceWithAppliedTaxAsString, taxValue.rate));
+            sb.AppendLine(product.ToString());
+            sb.Append(product.ToStringWithTaxe(taxValue));
 
             return sb.ToString();
         }

@@ -8,5 +8,10 @@
         {
             return (1 + (this.rate / 100));
         }
+
+        public override string ToString()
+        {
+            return rate.ToString();
+        }
     }
 }

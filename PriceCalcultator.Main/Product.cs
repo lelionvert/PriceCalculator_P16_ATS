@@ -24,5 +24,10 @@ namespace PriceCalcultator.Main
         {
             return String.Format("Book with name = \"{0}\", UPC = {1}, price =${2}.", this.name, this.upc, this.ConvertPriceToString(this.price)); 
         }
+
+        public string ToStringWithTaxe(TaxRate taxRate)
+        {
+            return String.Format("Product price reported as ${0} before tax and ${1} after {2} % tax.", this.price, this.ConvertPriceToString(this.ApplyTax(taxRate)), taxRate.ToString());
+        }
     }
 }
