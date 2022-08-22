@@ -8,23 +8,35 @@ namespace PriceCalcultator.Tests
     public class TaxCalculatorTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ToRename()
         {
             Product book = new Product()
             {
                 name = "Le Petit Prince",
                 upc = 12345,
-                price = 20.25f
+                price = 20.25
             };
 
-            TaxValue taxValue = new TaxValue()
+            TaxRate taxRate = new TaxRate()
             {
                 rate = 20
             };
 
-            String appliedTax = TaxCalculator.ApplyTax(book, taxValue);
-            Assert.AreEqual("Product price reported as $20.25 before tax and $24.30 after 20% tax.", appliedTax);
+            String appliedTax = TaxCalculator.GetFormatedReturn(book, taxRate);
+            Assert.AreEqual("Book with name = “The Little Prince”, UPC = 12345, price =$20.25.\n" +
+                            "Product price reported as $20.25 before tax and $24.30 after 20 % tax."
+                            , appliedTax);
         }
 
+        [TestMethod]
+        public void Apply20RateTax()
+        {
+            float price = 20.25f;
+            TaxRate taxRate = new TaxRate()
+            {
+                rate = 20
+            };
+            Assert.AreEqual(24.30, TaxCalculator.ApplyTax(price, taxRate));
+        }
     }
 }

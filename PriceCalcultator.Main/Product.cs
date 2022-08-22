@@ -6,6 +6,6 @@
 
         public int upc;
 
-        public float price; 
+        public double price; 
     }
 }
